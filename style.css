@@ -3,7 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    color: white;
+    color: black;
     font: 100% "Inter", sans-serif;
     text-align: center;
 }
@@ -24,6 +24,7 @@ header {
 }
 
 h1 {
+    color: white;
     grid-column-start: 1;
     font-weight: 700;
     margin-top: 90px;
@@ -41,6 +42,7 @@ h1 {
 }
 
 .paragrafo-header {
+    color: white;
     margin-top: -10px;
     margin-left: 5px;
     text-align: start;
@@ -50,6 +52,79 @@ button {
     background-image: linear-gradient(to right, #F6BA23, #C5900B);
     border-radius: 30px;
     font-weight: bold;
+    color: white;
     padding: 10px 30px 10px 30px;
     margin-top: 15px;
+    letter-spacing: 3px;
+}
+
+.text-chamativo h1 {
+    background-image: linear-gradient(to right, #F6BA23, #C5900B);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 40px;
+}
+
+.text-chamativo p {
+    text-align: justify;
+    color: black;
+    margin: 30px 40px 30px 40px;
+    font-size: 18pt;
+}
+
+.icon-dados {
+    display: grid;
+    grid-template-columns: repeat(2, 225px);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#experiencia {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#paciente {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#horas {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#satisfacao {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#experiencia img, #paciente img, #horas img, #satisfacao img {
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+#experiencia p, #paciente p, #horas p, #satisfacao p{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 12pt;
+    text-align: center;
+    color: black;
+}
+
+#experiencia span, #paciente span, #horas span, #satisfacao span {
+    color: black;
+    font-size: 9pt;
 }
