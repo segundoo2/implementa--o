@@ -1,56 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-.header {
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 370px;
-    background-image: linear-gradient(to top, #0048AA, #001D44);
-}
-
-.texto-header {
-    color: rgb(255, 255, 255);
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font: 100% "Inter", sans-serif;
     text-align: center;
-    font: bold 40px "Inter", sans-serif;
-    letter-spacing: 3px;
-    position: absolute;
-    z-index: 1;
-    top: 70px;
-    left: 150px;
 }
 
-.clinica {
-    letter-spacing: 7px;
+img {
+    grid-column-start: 2;
+    width: 380px;
+    height: 380px;
+    border-radius: 185px 0px 0px 185px;
+}
+
+header {
+    background-image: linear-gradient(to top, #0048AA, #001D44);
+    display: grid;
+    grid-template-columns: auto 500px;
+    justify-items: end;
+    height: 380px;
+}
+
+h1 {
+    grid-column-start: 1;
+    font-weight: 700;
+    margin-top: 90px;
+    letter-spacing: 5px;
 }
 
 .liberte {
-    background: linear-gradient(to right, #F6BA23, #C5900B);
-    background-clip: content-box;
+    margin-top: -15px;
+    margin-left: 4px;
+    text-align: start;
+    background-image: linear-gradient(to bottom right, #F6BA23, #C5900B);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: justify;
-    position: relative;
-    top: 160px;
-    left: 153px;
-    font-weight: bolder;
-    letter-spacing: 7px;
 }
 
-.pheader {
-    top: 205px;
-    left: 155px;
-    font-weight: 700;
-    font-size: 1em;
-    text-align: justify;
+.paragrafo-header {
+    margin-top: -10px;
+    margin-left: 5px;
+    text-align: start;
 }
 
-.butao {
-    top: 260px;
-    left: 210px;
-    font-size: 20px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 50px;
+button {
     background-image: linear-gradient(to right, #F6BA23, #C5900B);
-    border: none;
-
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+    margin-top: 15px;
 }
